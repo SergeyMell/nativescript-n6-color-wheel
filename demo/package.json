@@ -1,6 +1,5 @@
 {
   "nativescript": {
-    "discardUncaughtJsExceptions": true,
     "id": "org.nativescript.demo",
     "tns-android": {
       "version": "6.5.0"

@@ -1,3 +1,5 @@
+/// <reference path="./node_modules/tns-platform-declarations/android.d.ts" />
+
 import * as common from './common';
 import { ColorWheel as ColorWheelDefinition } from '.';
 import { Color } from '@nativescript/core';

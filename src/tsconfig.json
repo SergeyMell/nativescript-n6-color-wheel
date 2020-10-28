@@ -21,7 +21,15 @@
         "noFallthroughCasesInSwitch": true
     },
     "exclude": [
-        "node_modules"
+        "node_modules", "platforms"
+    ],
+    "include": [
+        "index.android.ts",
+        "common.ts",
+        "index.ios.ts",
+        "./angular/index.ts",
+        "./angular/color-wheel-module.ts",
+        "./angular/color-wheel-directives.ts"
     ],
     "compileOnSave": false
 }

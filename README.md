@@ -1,5 +1,9 @@
 # NativeScript Color Wheel
 
+This plugin is tend to use within NativeScript 6 version. 
+Correspondent {N}7 version 
+is [@sergeymell/nativescript-color-wheel](https://github.com/SergeyMell/nativescript-plugins/tree/main/packages/nativescript-color-wheel) 
+
 ## Description
 This plugin is actually a color picker plugin which can be used 
 as a simple component wherever you need it. It allows you to  

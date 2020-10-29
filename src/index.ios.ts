@@ -3,6 +3,7 @@
 import * as common from './common';
 import { ColorWheel as ColorWheelDefinition } from '.';
 import { Color } from 'tns-core-modules/color';
+import { releaseNativeObject } from '@nativescript/core/utils/utils';
 global.moduleMerge(common, exports);
 
 /**
@@ -45,8 +46,8 @@ class TapHandler extends NSObject {
     }
 
     /** Release allocated memory */
-    __releaseNativeCounterpart(colorSpace);
-    __releaseNativeCounterpart(context);
+    releaseNativeObject(colorSpace);
+    releaseNativeObject(context);
     free(pixel);
   }
 
@@ -87,9 +88,11 @@ export class ColorWheel extends common.ColorWheelCommon implements ColorWheelDef
       'inputValue': 1
     });
 
-    // CGColorSpaceRelease(colorSpace);
     const image = UIImage.imageWithCIImage(filter.outputImage);
     imageView.image = image;
+
+    releaseNativeObject(colorSpace);
+
     return imageView;
   }
 
@@ -167,8 +170,8 @@ export class ColorWheel extends common.ColorWheelCommon implements ColorWheelDef
       }
     }
     /** Release allocated memory */
-    __releaseNativeCounterpart(colorSpace);
-    __releaseNativeCounterpart(context);
+    releaseNativeObject(colorSpace);
+    releaseNativeObject(context);
     free(bitmapData);
 
     if (resX > -1 && resY > -1) {

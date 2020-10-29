@@ -1,6 +1,7 @@
 # NativeScript Color Wheel
 
-This plugin is tend to use within NativeScript 6 version. 
+This plugin is tend to be used within NativeScript 6 version. 
+
 Correspondent {N}7 version 
 is [@sergeymell/nativescript-color-wheel](https://github.com/SergeyMell/nativescript-plugins/tree/main/packages/nativescript-color-wheel) 
 

@@ -1,6 +1,6 @@
 {
 	"name": "nativescript-n6-color-wheel",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Your awesome NativeScript plugin.",
 	"main": "n6-color-wheel",
 	"typings": "index.d.ts",
